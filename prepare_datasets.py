@@ -28,8 +28,8 @@ def save_data_splits(tag_format: str, overwrite_test_set: bool = False):
     json.dump(val, open(f"data/{tag_format}_valid.json", "w"))
 
     if not os.path.exists('data/test.json') or overwrite_test_set:
-        test_examples = create_test_examples("data/test-task-1.csv")
-        json.dump(test_examples, open('data/test-task-1.json', 'w'))
+        #test_examples = create_test_examples("data/test-task-1.csv")
+        #json.dump(test_examples, open('data/test-task-1.json', 'w'))
         test_examples = create_test_examples("data/test-task-2.csv")
         json.dump(test_examples, open('data/test-task-2.json', 'w'))
 

@@ -12,10 +12,10 @@ def save_data_splits(tag_format: str, overwrite_test_set: bool = False):
     :return: None
     """
     train, val = get_train_and_validation_examples(
-        [
-            'data/trial-task-1.csv',
-            'data/practice-task-1.csv'
-        ],
+        #[
+        #    'data/trial-task-1.csv',
+        #    'data/practice-task-1.csv'
+        #],
         [
             'data/trial-task-2.csv',
             'data/practice-task-2.csv'
